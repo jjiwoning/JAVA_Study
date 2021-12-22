@@ -25,6 +25,5 @@ public class Conversion_Specifier {
         System.out.printf("%.1f\n", 1.23456); // %.숫자f를 하면 숫자만큼 소수점 자리가 설정이 된다.
         System.out.printf("%.2f\n", 1.23456); // 숫자 = 2 이므로 소수점 2자리
         System.out.printf("%.3f\n", 1.23456); // 정렬할때 뒷 자리는 반올림이 된다.
-
     }
 }
