@@ -10,10 +10,11 @@ public class Constructor_Study {
     public Constructor_Study(){
         System.out.println("기본 생성자 호출");
     }
-    // 사용자 정의 생성자
-    public Constructor_Study(int i){
+    // 사용자 정의 생성자함
+    // 현재 객체를 가리킬 때 this라는 키워드를 사용한다. -> 매개변수 이름과 클래스 변수 이름이 같을때 사용
+    public Constructor_Study(int num){
         System.out.println("사용자 정의 생성자 호출");
-        num = i;
+        this.num = num;
     }
     public Constructor_Study(int []i){
         System.out.println("사용자 정의 생성자 호출");
@@ -23,5 +24,12 @@ public class Constructor_Study {
     // 매서드
     public void printArray(){
         System.out.println(Arrays.toString(num2));
+    }
+
+    // 소멸자 -> override : 있다는 것만 알아두자, 알아서 처리 해줌.
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("소멸자 호출");
+        super.finalize();
     }
 }
