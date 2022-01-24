@@ -1,4 +1,4 @@
-package Interpace_Study;
+package Interface_Study;
 
 public interface Toy {
     // 인터페이스는 매서드를 선언만 하지 정의를 하지 않는다.

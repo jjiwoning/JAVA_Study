@@ -1,4 +1,4 @@
-package Interpace_Study;
+package Interface_Study;
 
 public class ToyRobot implements Toy{
 

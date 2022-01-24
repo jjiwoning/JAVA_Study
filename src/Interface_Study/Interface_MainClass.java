@@ -1,6 +1,6 @@
-package Interpace_Study;
+package Interface_Study;
 
-public class Interpace_MainClass {
+public class Interface_MainClass {
     //인터페이스
     // 객체의 타입이 다형성으로 확장될 수 있다.
     // 실제 함수의 구현은 클래스에서 하자! 인터페이스는 함수 선언만!
