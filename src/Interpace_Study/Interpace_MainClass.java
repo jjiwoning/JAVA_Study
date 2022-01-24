@@ -2,6 +2,8 @@ package Interpace_Study;
 
 public class Interpace_MainClass {
     //인터페이스
+    // 객체의 타입이 다형성으로 확장될 수 있다.
+    // 실제 함수의 구현은 클래스에서 하자! 인터페이스는 함수 선언만!
     public static void main(String[] args) {
         // 인터페이스로 객체를 생성하는데 그 객체에 각각 클래스로 객체를 생성할 수 있다.
         // 아래의 코드를 보면 알 수 있다.
