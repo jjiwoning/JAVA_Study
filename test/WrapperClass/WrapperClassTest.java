@@ -1,5 +1,6 @@
 package WrapperClass;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class WrapperClassTest {
@@ -23,6 +24,16 @@ public class WrapperClassTest {
         Long a = 1L;
         Long b = 1L;
 
-        System.out.println("(a == b) = " + (a == b));
+        Assertions.assertEquals(a, b);
+    }
+
+    @Test
+    void valueFunc(){
+        //given
+        Long a = 3L;
+        Long b = 3L;
+
+        //then
+        Assertions.assertTrue(a.longValue() == b.longValue());
     }
 }
