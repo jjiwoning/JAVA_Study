@@ -31,7 +31,7 @@ public class WrapperClassTest {
     void valueFunc(){
         //given
         Long a = 3L;
-        Long b = 3L;
+        Long b = new Long(3);
 
         //then
         Assertions.assertTrue(a.longValue() == b.longValue());
