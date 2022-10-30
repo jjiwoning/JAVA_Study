@@ -12,6 +12,9 @@ public class FunctionalInterfaceTest {
 
         MyClass myClass = new MyClass((a, b) -> System.out.println(a + b));
         myClass.call1(x, y);
+
+        MyClass myClass1 = new MyClass((c, d) -> System.out.println(c * d));
+        myClass1.call1(x, y);
     }
 
 }
