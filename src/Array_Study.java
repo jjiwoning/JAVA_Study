@@ -36,6 +36,16 @@ public class Array_Study {
         // 배열의 주소(레퍼런스) -> 이름을 적으면 주소값이 출력됨.
         System.out.println("arr3의 주소: " + arr3);
         System.out.println("arr4의 주소: " + arr4);
+
+        int[][] doubleArr = new int[][]{new int[]{1, 2, 3, 4}};
+        for (int[] ints : doubleArr) {
+            for (int anInt : ints) {
+                System.out.println(anInt);
+            }
         }
+
+        int[] sample = new int[]{3, 4, 5, 6};
+        int[][] arr5 = new int[][]{{1, 2, 3, 4}, sample};
     }
+}
 
