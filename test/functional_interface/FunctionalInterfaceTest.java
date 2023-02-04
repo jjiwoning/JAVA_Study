@@ -2,6 +2,8 @@ package functional_interface;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.PriorityQueue;
+
 public class FunctionalInterfaceTest {
 
     @Test
@@ -15,6 +17,8 @@ public class FunctionalInterfaceTest {
 
         MyClass myClass1 = new MyClass((c, d) -> System.out.println(c * d));
         myClass1.call1(x, y);
+
+        PriorityQueue<Integer> priorityQueue1 = new PriorityQueue<>((o1, o2) -> o2 - o1);
     }
 
 }
